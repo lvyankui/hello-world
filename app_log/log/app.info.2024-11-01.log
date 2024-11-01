@@ -1,0 +1,84 @@
+2024-11-01 15:24:04.119 INFO [main]com.example.demo.App.logStarting:55 -Starting App using Java 11.0.20.1 on lv with PID 29528 (E:\workspace1\hello-world\target\classes started by xiaohei in E:\workspace1\hello-world)
+2024-11-01 15:24:04.137 INFO [main]com.example.demo.App.logStartupProfileInfo:632 -No active profile set, falling back to 1 default profile: "default"
+2024-11-01 15:24:05.852 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 15:24:05.982 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 -Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+2024-11-01 15:24:07.840 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2024-11-01 15:24:07.851 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:24:07.855 INFO [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2024-11-01 15:24:07.856 INFO [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-01 15:24:08.036 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2024-11-01 15:24:08.036 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 -Root WebApplicationContext: initialization completed in 3756 ms
+2024-11-01 15:24:08.162 INFO [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:66 -Init DruidDataSource
+2024-11-01 15:24:08.422 INFO [main]com.alibaba.druid.pool.DruidDataSource.init:1007 -{dataSource-1} inited
+2024-11-01 15:24:08.620 INFO [main]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 15:24:08.731 INFO [main]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-01 15:24:08.931 INFO [main]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-01 15:24:09.476 INFO [main]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-11-01 15:24:10.237 INFO [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-01 15:24:10.251 INFO [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 15:24:10.821 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:223 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 15:24:11.141 INFO [main]o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init>:60 -Adding welcome page template: index
+2024-11-01 15:24:11.564 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:24:11.635 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-01 15:24:11.667 INFO [main]com.example.demo.App.logStarted:61 -Started App in 8.486 seconds (JVM running for 9.684)
+2024-11-01 15:24:17.462 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 15:24:17.464 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2024-11-01 15:24:17.465 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2024-11-01 15:26:16.727 INFO [SpringApplicationShutdownHook]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:651 -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 15:26:16.729 INFO [SpringApplicationShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2212 -{dataSource-1} closing ...
+2024-11-01 15:26:16.736 INFO [SpringApplicationShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2285 -{dataSource-1} closed
+2024-11-01 15:26:23.323 INFO [main]com.example.demo.App.logStarting:55 -Starting App using Java 11.0.20.1 on lv with PID 33084 (E:\workspace1\hello-world\target\classes started by xiaohei in E:\workspace1\hello-world)
+2024-11-01 15:26:23.329 INFO [main]com.example.demo.App.logStartupProfileInfo:632 -No active profile set, falling back to 1 default profile: "default"
+2024-11-01 15:26:24.465 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 15:26:24.555 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 -Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2024-11-01 15:26:26.101 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2024-11-01 15:26:26.113 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:26:26.116 INFO [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2024-11-01 15:26:26.117 INFO [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-01 15:26:26.304 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2024-11-01 15:26:26.304 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 -Root WebApplicationContext: initialization completed in 2884 ms
+2024-11-01 15:26:26.434 INFO [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:66 -Init DruidDataSource
+2024-11-01 15:26:26.695 INFO [main]com.alibaba.druid.pool.DruidDataSource.init:1007 -{dataSource-1} inited
+2024-11-01 15:26:26.951 INFO [main]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 15:26:27.081 INFO [main]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-01 15:26:27.338 INFO [main]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-01 15:26:27.811 INFO [main]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-11-01 15:26:28.476 INFO [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-01 15:26:28.487 INFO [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 15:26:28.841 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:223 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 15:26:29.085 INFO [main]o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init>:60 -Adding welcome page template: index
+2024-11-01 15:26:29.587 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:26:29.636 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-01 15:26:29.655 INFO [main]com.example.demo.App.logStarted:61 -Started App in 7.014 seconds (JVM running for 7.902)
+2024-11-01 15:26:36.958 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 15:26:36.959 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2024-11-01 15:26:36.960 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms
+2024-11-01 15:27:45.357 INFO [SpringApplicationShutdownHook]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:651 -Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 15:27:45.359 INFO [SpringApplicationShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2212 -{dataSource-1} closing ...
+2024-11-01 15:27:45.366 INFO [SpringApplicationShutdownHook]com.alibaba.druid.pool.DruidDataSource.close:2285 -{dataSource-1} closed
+2024-11-01 15:27:52.054 INFO [main]com.example.demo.App.logStarting:55 -Starting App using Java 11.0.20.1 on lv with PID 31168 (E:\workspace1\hello-world\target\classes started by xiaohei in E:\workspace1\hello-world)
+2024-11-01 15:27:52.059 INFO [main]com.example.demo.App.logStartupProfileInfo:632 -No active profile set, falling back to 1 default profile: "default"
+2024-11-01 15:27:53.039 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:132 -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 15:27:53.117 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:201 -Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2024-11-01 15:27:54.588 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2024-11-01 15:27:54.600 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:27:54.603 INFO [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2024-11-01 15:27:54.604 INFO [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.83]
+2024-11-01 15:27:54.784 INFO [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2024-11-01 15:27:54.784 INFO [main]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:292 -Root WebApplicationContext: initialization completed in 2657 ms
+2024-11-01 15:27:54.897 INFO [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:66 -Init DruidDataSource
+2024-11-01 15:27:55.140 INFO [main]com.alibaba.druid.pool.DruidDataSource.init:1007 -{dataSource-1} inited
+2024-11-01 15:27:55.376 INFO [main]org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 -HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 15:27:55.478 INFO [main]org.hibernate.Version.logVersion:44 -HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-01 15:27:55.746 INFO [main]org.hibernate.annotations.common.Version.<clinit>:56 -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-01 15:27:56.276 INFO [main]org.hibernate.dialect.Dialect.<init>:175 -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-11-01 15:27:57.016 INFO [main]o.h.e.t.jta.platform.internal.JtaPlatformInitiator.initiateService:52 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-01 15:27:57.027 INFO [main]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:437 -Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 15:27:57.472 WARN [main]o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor:223 -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 15:27:57.733 INFO [main]o.s.b.a.web.servlet.WelcomePageHandlerMapping.<init>:60 -Adding welcome page template: index
+2024-11-01 15:27:58.146 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2024-11-01 15:27:58.203 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-01 15:27:58.224 INFO [main]com.example.demo.App.logStarted:61 -Started App in 6.792 seconds (JVM running for 7.666)
+2024-11-01 15:28:02.959 INFO [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 15:28:02.960 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2024-11-01 15:28:02.961 INFO [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 1 ms

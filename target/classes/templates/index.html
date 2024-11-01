@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>同步用户</title>
+    <style type="text/css">
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h2>同步用户</h2>
+    <form id="userForm">
+        <label for="originalUsername">原始用户名:</label>
+        <input type="text" id="originalUsername" name="originalUsername" required="required">
+        <label for="originalPassword">原始密码:</label>
+        <input type="password" id="originalPassword" name="originalPassword" required="required">
+
+        <label for="currentUsername">当前用户名:</label>
+        <input type="text" id="currentUsername" name="currentUsername" required="required">
+        <label for="currentPassword">当前密码:</label>
+        <input type="password" id="currentPassword" name="currentPassword" required="required">
+    
+        <button type="submit">开始同步</button>
+    </form>
+</body>
+    <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#userForm').on('submit', function(event) {
+                event.preventDefault(); // 阻止表单默认提交行为
+    
+                // 获取表单数据
+                const originalUsername = $('#originalUsername').val();
+                const originalPassword = $('#originalPassword').val();
+                // 获取表单数据
+                const currentUsername = $('#currentUsername').val();
+                const currentPassword = $('#currentPassword').val();
+
+                // 准备发送的数据
+                const userData = {
+                    originalUsername: originalUsername,
+                    originalPassword: originalPassword,
+                    currentUsername: currentUsername,
+                    currentPassword: currentPassword
+                };
+
+                // 发送AJAX请求
+                $.ajax({
+                    url: '/save',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(userData),
+                    success: function(response) {
+                        // 清空表单
+                        $('#oname').val('');
+                        $('#oemail').val('');
+
+                        // 清空表单
+                        $('#name').val('');
+                        $('#email').val('');
+                    },
+                    error: function(xhr, status, error) {
+                        alert('添加用户失败，请稍后再试。');
+                        console.error('Error:', error);
+                    }
+                });
+            });
+        });
+    </script>
+</html>
