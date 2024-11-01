@@ -40,7 +40,6 @@ public class User {
     }
 
     public void setOriginalPassword(String originalPassword) {
-        originalPassword = Base64.getEncoder().encodeToString(originalPassword.getBytes());
         this.originalPassword = originalPassword;
     }
 
@@ -57,7 +56,6 @@ public class User {
     }
 
     public void setCurrentPassword(String currentPassword) {
-        currentPassword = Base64.getEncoder().encodeToString(currentPassword.getBytes());
         this.currentPassword = currentPassword;
     }
 }

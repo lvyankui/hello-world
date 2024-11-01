@@ -4,10 +4,10 @@ package com.example.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Collections;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -20,10 +20,10 @@ public class UserController {
         return "index";
     }
 
+    @ResponseBody
     @PostMapping("/save")
-    public String saveUser(User user) {
-        user.setSuccess(1);
-        userService.saveUser(user);
-        return "redirect:/";
+    public List<String> saveUser(User user) throws Exception {
+        userService.save(user);
+        return Collections.emptyList();
     }
 }
