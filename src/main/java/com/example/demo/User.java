@@ -2,6 +2,7 @@ package com.example.demo;
 
 
 import javax.persistence.*;
+import java.util.Base64;
 
 @Entity
 @Table(name="user")
@@ -14,6 +15,16 @@ public class User {
     private String originalPassword;
     private String currentUsername;
     private String currentPassword;
+
+    private Integer success;
+
+    public Integer isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Integer success) {
+        this.success = success;
+    }
 
     // Getters and Setters
     public String getOriginalUsername() {
@@ -29,6 +40,7 @@ public class User {
     }
 
     public void setOriginalPassword(String originalPassword) {
+        originalPassword = Base64.getEncoder().encodeToString(originalPassword.getBytes());
         this.originalPassword = originalPassword;
     }
 
@@ -45,6 +57,7 @@ public class User {
     }
 
     public void setCurrentPassword(String currentPassword) {
+        currentPassword = Base64.getEncoder().encodeToString(currentPassword.getBytes());
         this.currentPassword = currentPassword;
     }
 }

@@ -84,16 +84,15 @@
                 $.ajax({
                     url: '/save',
                     type: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(userData),
+                    data: userData,
                     success: function(response) {
                         // 清空表单
-                        $('#oname').val('');
-                        $('#oemail').val('');
+                        $('#originalUsername').val('');
+                        $('#originalPassword').val('');
 
                         // 清空表单
-                        $('#name').val('');
-                        $('#email').val('');
+                        $('#currentUsername').val('');
+                        $('#currentPassword').val('');
                     },
                     error: function(xhr, status, error) {
                         alert('添加用户失败，请稍后再试。');

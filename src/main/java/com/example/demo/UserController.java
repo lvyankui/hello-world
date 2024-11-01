@@ -21,7 +21,8 @@ public class UserController {
     }
 
     @PostMapping("/save")
-    public String saveUser(@RequestBody User user) {
+    public String saveUser(User user) {
+        user.setSuccess(1);
         userService.saveUser(user);
         return "redirect:/";
     }
